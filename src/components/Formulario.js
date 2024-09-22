@@ -18,6 +18,13 @@ const Formulario = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Datos enviados:", formData);
+
+    //LIMPIAR Formulario
+    setFormData({
+      id: "",
+      nombre: "",
+      apellido: "",
+    });
     // Aquí puedes hacer la solicitud para enviar los datos, por ejemplo usando fetch o axios
   };
 
